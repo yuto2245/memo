@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+   
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/function.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="tabs">
+        <div class="tabs_head">
+            <div class="tabs_toggle is-active">
+                <span class="tabs_name">Memo1</span>
+            </div>
+            <div class="tabs_toggle is-active">
+                <span class="tabs_name">Memo2</span>
+            </div>
+            <div class="tabs_toggle is-active">
+                <span class="tabs_name">Memo3</span>
+            </div>
+        </div>
+        <div class="tabs_body">
+            <div class="tabs_content">
+                <h2 class="tabs_title">Memo1</h2>
+                <div class="main">
+                    <div>
+                        <input type="text" class="textarea1" name="q"  rows=""  cols="" placeholder="タイトル">
+                    </div>
+                    <div>
+                        <textarea id="1"  class="textarea2" rows="" cols="" placeholder="文章を入力・コピー＆ペースト" onkeyup="ShowLength1(value);"></textarea>
+                    </div>
+                </div>
+                <ul class="function">
+                    <li >
+                        <p id="inputlength1">0文字</p>
+                    </li>
+                    <li class="tooltip">
+                        <div id="btn1" class="button" type="submit" onclick="copyToClipboard1()"><span class="material-symbols-outlined">
+                            content_copy</span></div>
+                        <div class="description">テキストをコピー</div>
+                    </li>
+                    <li class="tooltip">
+                        <div id="speech-btn1"><span class="material-symbols-outlined">
+                            mic</span></div>
+                        <div class="description">音声で入力</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="tabs_content">
+                <h2 class="tabs_title">Memo2</h2>
+                <div class="main">
+                    <div>
+                        <input type="text" class="textarea1" name="q"  rows="1"  cols="30" placeholder="タイトル">
+                    </div>
+                    <div>
+                        <textarea id="2"  class="textarea2" rows="20" cols="60" placeholder="文章を入力・コピー＆ペースト" onkeyup="ShowLength2(value);"></textarea>
+                    </div>
+                </div>
+                <ul class="function">
+                    <li >
+                        <p id="inputlength2">0文字</p>
+                    </li>
+                    <li class="tooltip">
+                        <div id="btn2" class="button" type="submit" onclick="copyToClipboard2()"><span class="material-symbols-outlined">
+                            content_copy</span></div>
+                        <div class="description">テキストをコピー</div>
+                    </li>
+                    <li class="tooltip">
+                        <div id="speech-btn2"><span class="material-symbols-outlined">
+                            mic</span></div>
+                        <div class="description">音声で入力</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="tabs_content">
+                <h2 class="tabs_title">Memo3</h2>
+                <div class="main">
+                    <div>
+                        <input type="text" class="textarea1" name="q"  rows="1"  cols="30" placeholder="タイトル">
+                    </div>
+                    <div>
+                        <textarea id="3"  class="textarea2" rows="20" cols="60" placeholder="文章を入力・コピー＆ペースト" onkeyup="ShowLength3(value);"></textarea>
+                    </div>
+                </div>
+                <ul class="function">
+                    <li >
+                        <p id="inputlength3">0文字</p>
+                    </li>
+                    <li class="tooltip">
+                        <div id="btn3" class="button" type="submit" onclick="copyToClipboard3()"><span class="material-symbols-outlined">
+                            content_copy</span></div>
+                        <div class="description">テキストをコピー</div>
+                    </li>
+                    <li class="tooltip">
+                        <div id="speech-btn3"><span class="material-symbols-outlined">
+                            mic</span></div>
+                        <div class="description">音声で入力</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="js/copy.js"></script>
+    <script src="js/count.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/speech.js"></script>
+</body>
+</html>
